@@ -25,5 +25,16 @@ module.exports = async () => {
       value[1] = { ...value[1], resolvedBaseUrl: undefined };
     }
   }
+  // next-intl ships ESM only — let it (and its deps) through the transformer.
+  // Scoped entries match the whole scope (`@formatjs/…`, `.pnpm/@formatjs+…`).
+  const esmPackages =
+    'next-intl|use-intl|intl-messageformat|icu-minify|@formatjs|@schummar';
+  resolved.transformIgnorePatterns = [
+    `/node_modules/(?!\\.pnpm)(?!(${esmPackages})[/@])`,
+    `/node_modules/\\.pnpm/(?!(${esmPackages})[@+])`,
+    ...resolved.transformIgnorePatterns.filter(
+      (pattern: string) => !pattern.startsWith('/node_modules/'),
+    ),
+  ];
   return resolved;
 };

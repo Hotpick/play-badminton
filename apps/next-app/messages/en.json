@@ -1,0 +1,12 @@
+{
+  "Metadata": {
+    "title": "Play Badminton",
+    "description": "Organize badminton games and track ratings"
+  },
+  "HomePage": {
+    "greeting": "Hello there,",
+    "welcome": "Welcome to Play Badminton 👋",
+    "upAndRunning": "You're up and running",
+    "whatsNext": "What's next?"
+  }
+}

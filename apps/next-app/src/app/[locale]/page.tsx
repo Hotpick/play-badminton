@@ -1,8 +1,19 @@
 /* oxlint-disable jsx-a11y/prefer-tag-over-role -- the icons below
    are inline SVGs, which have no tag to swap the role for. */
+import { type Locale, useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
+import { use } from 'react';
 import styles from './page.module.css';
 
-export default function Index() {
+export default function Index({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = use(params);
+  setRequestLocale(locale as Locale);
+  const t = useTranslations('HomePage');
+
   /*
    * Replace the elements below with your own.
    *
@@ -14,8 +25,8 @@ export default function Index() {
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Hello there, </span>
-              Welcome @play-badminton-nx/play-badminton 👋
+              <span> {t('greeting')} </span>
+              {t('welcome')}
             </h1>
           </div>
 
@@ -35,9 +46,9 @@ export default function Index() {
                     d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
                   />
                 </svg>
-                <span>You&apos;re up and running</span>
+                <span>{t('upAndRunning')}</span>
               </h2>
-              <a href="#commands"> What&apos;s next? </a>
+              <a href="#commands"> {t('whatsNext')} </a>
             </div>
             <div className="logo-container">
               <svg

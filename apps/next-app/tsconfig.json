@@ -29,8 +29,8 @@
     "src/**/*.tsx",
     "src/**/*.js",
     "src/**/*.jsx",
-    "../../apps/play-badminton/.next/types/**/*.ts",
-    "../../dist/apps/play-badminton/.next/types/**/*.ts",
+    "../../apps/next-app/.next/types/**/*.ts",
+    "../../dist/apps/next-app/.next/types/**/*.ts",
     "index.d.ts",
     "next-env.d.ts"
   ],

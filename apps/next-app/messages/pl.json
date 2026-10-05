@@ -1,0 +1,12 @@
+{
+  "Metadata": {
+    "title": "Play Badminton",
+    "description": "Organizuj mecze badmintona i śledź rankingi"
+  },
+  "HomePage": {
+    "greeting": "Cześć,",
+    "welcome": "Witaj w Play Badminton 👋",
+    "upAndRunning": "Wszystko działa",
+    "whatsNext": "Co dalej?"
+  }
+}
