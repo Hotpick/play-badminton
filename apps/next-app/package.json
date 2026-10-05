@@ -1,9 +1,9 @@
 {
-  "name": "@play-badminton-nx/play-badminton",
+  "name": "@play-badminton-nx/next-app",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "sourceRoot": "apps/play-badminton/src"
+    "sourceRoot": "apps/next-app/src"
   },
   "dependencies": {
     "next": "~16.1.6",

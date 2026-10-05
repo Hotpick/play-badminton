@@ -136,7 +136,7 @@ importers:
         specifier: ^8.58.0
         version: 8.71.0(eslint@9.39.5(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
 
-  apps/play-badminton:
+  apps/next-app:
     dependencies:
       next:
         specifier: ~16.1.6
@@ -147,8 +147,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.3.0(react@19.3.0)
-
-  apps/play-badminton-e2e: {}
 
 packages:
 
@@ -10957,7 +10955,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 26.6.4
+      '@types/node': 22.20.5
       merge-stream: 2.0.0
       supports-color: 8.1.1
 

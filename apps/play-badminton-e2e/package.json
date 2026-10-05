@@ -4,7 +4,7 @@
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@play-badminton-nx/play-badminton"
+      "@play-badminton-nx/next-app"
     ]
   }
 }

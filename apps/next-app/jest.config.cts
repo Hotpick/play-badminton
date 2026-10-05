@@ -5,13 +5,13 @@ const createJestConfig = nextJest({
 });
 
 const config = {
-  displayName: '@play-badminton-nx/play-badminton',
+  displayName: '@play-badminton-nx/next-app',
   preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/play-badminton',
+  coverageDirectory: '../../coverage/apps/next-app',
   testEnvironment: 'jsdom',
 };
 
