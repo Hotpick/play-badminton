@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "./apps/next-app"
+    },
+    {
+      "path": "./libs/i18n"
     }
   ]
 }

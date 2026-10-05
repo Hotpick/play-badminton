@@ -6,6 +6,7 @@
     "sourceRoot": "apps/next-app/src"
   },
   "dependencies": {
+    "@play-badminton-nx/i18n": "workspace:*",
     "next": "~16.1.6",
     "next-intl": "^4.14.9",
     "react": "^19.0.0",
